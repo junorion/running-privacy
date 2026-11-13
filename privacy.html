@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>톡톡런 개인정보처리방침</title>
+<style>
+  :root { --bg:#FFFFFF; --panel:#F2F2F7; --text:#1C1C1E; --muted:#6C6C70; --accent:#2E9E5B; --line:#D8D8DE; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#1C1C1E; --panel:#2C2C2E; --text:#F2F2F7; --muted:#A1A1A6; --accent:#62D48A; --line:#3A3A3C; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; padding: 40px 16px 64px; background: var(--bg); color: var(--text);
+         font-family: system-ui, "Malgun Gothic", sans-serif; line-height: 1.7; }
+  main { max-width: 720px; margin: 0 auto; }
+  h1 { font-size: clamp(22px, 5vw, 30px); margin: 0 0 4px; }
+  h2 { font-size: 18px; margin: 32px 0 8px; color: var(--accent); }
+  .meta { color: var(--muted); font-size: 13px; margin: 0 0 28px; }
+  ul { padding-left: 20px; }
+  .box { background: var(--panel); border: 1px solid var(--line); border-radius: 12px; padding: 18px 20px; margin: 18px 0; }
+  hr { border: none; border-top: 1px solid var(--line); margin: 44px 0 28px; }
+  a { color: var(--accent); }
+  code { font-size: .9em; }
+</style>
+</head>
+<body>
+<main>
+
+  <h1>톡톡런 개인정보처리방침</h1>
+  <p class="meta">앱 이름: 톡톡런 (com.junorion.running) · 최종 수정일: 2026년 11월 13일</p>
+
+  <div class="box">
+    <strong>요약:</strong> 러닝 기록(위치 경로 포함)은 <strong>기기 안에만</strong> 저장되고 개발자에게 전송되지 않습니다.
+    개발자는 서버를 운영하지 않으며, 광고와 분석 도구를 넣지 않았습니다.
+    단, 지도를 보여 줄 때 Google 지도 서비스에 지도 영역을 요청합니다(아래 4번).
+  </div>
+
+  <h2>1. 기기에 저장하는 정보</h2>
+  <p>아래 정보는 앱의 기능을 위해 <strong>사용자의 기기 안에만</strong> 저장합니다. 앱을 삭제하면 함께 지워집니다.</p>
+  <ul>
+    <li><strong>러닝 기록</strong>: 달리는 동안의 위치(위도·경도·고도·정확도)와 시각, 거리, 시간, 페이스, 구간 기록, 걸음 수·케이던스</li>
+    <li><strong>체중</strong>(입력한 경우): 소모 칼로리 계산에만 씁니다</li>
+    <li><strong>설정</strong>: 거리 단위, 구간 거리, 화면 모드, 메트로놈·타이머 설정과 타이머 프리셋</li>
+  </ul>
+
+  <h2>2. 사용하는 권한과 이유</h2>
+  <ul>
+    <li><strong>위치(정확한 위치·대략적인 위치)</strong>: 러닝 중 경로와 거리를 기록하고, 지도에 현재 위치를 표시합니다. 러닝을 기록하는 동안에는 화면이 꺼져도 기록하도록 포그라운드 서비스(알림이 표시됨)로 위치를 받습니다. 러닝을 하지 않을 때는 위치를 기록하지 않습니다.</li>
+    <li><strong>신체 활동</strong>: 기기의 걸음 센서로 걸음 수와 케이던스를 셉니다.</li>
+    <li><strong>알림</strong>: 러닝·메트로놈·타이머가 동작 중임을 알리고 멈출 수 있게 합니다.</li>
+    <li><strong>포그라운드 서비스</strong>: 러닝 기록(위치), 앱 밖에서 메트로놈 소리 재생(미디어 재생), 러닝 없이 운동 타이머 진행(건강)을 화면이 꺼져도 이어 가기 위해 씁니다.</li>
+    <li><strong>인터넷</strong>: Google 지도를 표시하는 데만 씁니다.</li>
+    <li><strong>절전 해제(WAKE_LOCK)·진동</strong>: 화면이 꺼져도 타이머가 제때 울리게 하고, 단계가 바뀔 때 진동으로 알립니다.</li>
+  </ul>
+
+  <h2>3. 개발자에게 전송되는 정보</h2>
+  <p>없습니다. 개발자는 서버를 운영하지 않으며, 계정·로그인 기능이 없습니다. 광고 SDK, 분석 SDK, 오류 보고 도구를 넣지 않았습니다.</p>
+
+  <h2>4. Google 지도</h2>
+  <p>러닝 준비 화면과 기록 화면의 지도는 Google Maps SDK for Android로 표시합니다.
+     지도를 그리기 위해 기기가 Google 서버에 지도 영역을 요청하며, 이때 Google은 기기의 IP 주소와
+     요청한 지도 영역(대략적인 위치를 알 수 있음), SDK 사용 정보를 받을 수 있습니다.
+     러닝 경로 기록 자체는 Google에 보내지 않습니다. Google의 정보 처리는
+     <a href="https://policies.google.com/privacy">Google 개인정보처리방침</a>을 따릅니다.</p>
+
+  <h2>5. 사용자가 직접 내보내는 경우</h2>
+  <ul>
+    <li><strong>공유</strong>: 기록 화면에서 공유를 누르면 기록 이미지나 GPX 파일(경로 포함)을 사용자가 고른 앱으로 보냅니다.</li>
+    <li><strong>백업</strong>: 설정에서 기록 내보내기를 누르면 모든 러닝 기록을 JSON 파일로 사용자가 고른 위치에 저장합니다.</li>
+  </ul>
+  <p>이 경우 정보가 어디로 가는지는 사용자가 정하며, 개발자는 그 내용을 받지 않습니다.</p>
+
+  <h2>6. 안드로이드 자동 백업</h2>
+  <p>기기에서 안드로이드 자동 백업이 켜져 있으면 앱 데이터가 사용자 본인의 Google 계정 백업에 포함될 수 있습니다.
+     이는 운영체제가 제공하는 기능이며, 개발자는 그 백업에 접근할 수 없습니다.</p>
+
+  <h2>7. 보관과 삭제</h2>
+  <p>기록은 사용자가 지우거나 앱을 삭제할 때까지 기기에 남습니다. 기록 화면에서 러닝 기록을 하나씩 지울 수 있고,
+     앱을 삭제하면 모든 데이터가 지워집니다.</p>
+
+  <h2>8. 아동</h2>
+  <p>이 앱은 아동을 대상으로 하지 않으며, 개발자는 누구의 개인정보도 수집하지 않습니다.</p>
+
+  <h2>9. 문의</h2>
+  <p>이 방침에 대한 문의: <a href="https://github.com/junorion/running-privacy/issues">github.com/junorion/running-privacy/issues</a></p>
+
+  <h2>10. 변경</h2>
+  <p>방침이 바뀌면 이 페이지를 고치고 위의 최종 수정일을 바꿉니다.</p>
+
+  <hr>
+
+  <h1>TokTok Run Privacy Policy</h1>
+  <p class="meta">App: TokTok Run (com.junorion.running) · Last updated: November 13, 2026</p>
+
+  <div class="box">
+    <strong>Summary:</strong> Your runs (including location routes) are stored <strong>only on your device</strong> and are never sent to the developer.
+    The developer runs no servers and the app contains no ads or analytics.
+    To show maps, the app requests map areas from Google Maps (see section 4).
+  </div>
+
+  <h2>1. Data stored on your device</h2>
+  <ul>
+    <li><strong>Runs</strong>: location points (latitude, longitude, altitude, accuracy) with timestamps, distance, time, pace, splits, steps and cadence</li>
+    <li><strong>Body weight</strong> (if entered): used only to estimate calories</li>
+    <li><strong>Settings</strong>: units, split length, theme, metronome and timer settings, timer presets</li>
+  </ul>
+  <p>This data is deleted when you uninstall the app.</p>
+
+  <h2>2. Permissions and why</h2>
+  <ul>
+    <li><strong>Location (precise and approximate)</strong>: records your route and distance while running and shows your position on the map. While a run is being recorded, a foreground service (with a visible notification) keeps recording with the screen off. Location is not recorded when you are not running.</li>
+    <li><strong>Physical activity</strong>: counts steps and cadence with the device step sensor.</li>
+    <li><strong>Notifications</strong>: shows that a run, metronome or timer is active and lets you stop it.</li>
+    <li><strong>Foreground services</strong>: run recording (location), metronome playback outside the app (media playback), and the workout timer without a run (health), so they keep working with the screen off.</li>
+    <li><strong>Internet</strong>: used only to display Google Maps.</li>
+    <li><strong>Wake lock and vibration</strong>: keep the timer on time with the screen off and vibrate at each step.</li>
+  </ul>
+
+  <h2>3. Data sent to the developer</h2>
+  <p>None. There are no servers, accounts or sign-in, and no advertising, analytics or crash-reporting SDKs.</p>
+
+  <h2>4. Google Maps</h2>
+  <p>Maps are displayed with the Google Maps SDK for Android. To draw a map, your device requests the map area from Google,
+     which may receive your IP address, the requested area (which can indicate your approximate location) and SDK usage data.
+     Your recorded routes are not sent to Google. Google handles this data under the
+     <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</p>
+
+  <h2>5. Data you choose to export</h2>
+  <ul>
+    <li><strong>Share</strong>: sends a run image or GPX file (including the route) to the app you choose.</li>
+    <li><strong>Backup</strong>: saves all runs as a JSON file to the location you choose.</li>
+  </ul>
+  <p>You decide where this data goes; the developer does not receive it.</p>
+
+  <h2>6. Android Auto Backup</h2>
+  <p>If Android Auto Backup is enabled, app data may be included in your own Google account backup. The developer has no access to it.</p>
+
+  <h2>7. Retention and deletion</h2>
+  <p>Runs stay on your device until you delete them or uninstall the app. You can delete runs one by one from the record screen.</p>
+
+  <h2>8. Children</h2>
+  <p>The app is not directed at children, and the developer collects no personal data from anyone.</p>
+
+  <h2>9. Contact</h2>
+  <p>Questions about this policy: <a href="https://github.com/junorion/running-privacy/issues">github.com/junorion/running-privacy/issues</a></p>
+
+  <h2>10. Changes</h2>
+  <p>If this policy changes, this page will be updated and the date above revised.</p>
+
+</main>
+</body>
+</html>
